@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta charset = "utf-8">
+        <meta name = "viewport"content = "width = device-width,initial-scale = 1"> 
+    </head>
+    <body>
+        <div>
+            <div class="mt-4 p-5 bg-light text-black rounded">
+                <form action="#">
+                    <h1>Sign Up</h1>
+                    <div>
+                        <label>Name: <br><input type = "text" name = "name" id = "name" placeholder = "Full name"></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Email: <br><input type = "email" name = "email" id = "email" placeholder = "Gmail ID"></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Password: <br><input type = "password" name = "pwd" id = "pwd" placeholder = "8 characters"></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Confirm Password: <br><input type = "password" name = "conpwd" id = "conpwd" placeholder = "8 characters"></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Date Of Birth: <br><input type = "date" name = "dob" id = "dob" placeholder = "dd/mm/yyyy"></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Gender: </label><br><label><input type = "radio" name = "male" id = "male"> Male</label>
+                        <label><input type = "radio" name = "female" id = "female"> Female</label>
+                        <label><input type = "radio" name = "other" id = "other"> Other</label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Insert your Photo: <br><input type = "file" name = "mypic" id = "mypic" ></label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Insert your Resume: <br><input type = "file" name = "myresume" id = "myresume" ></label>
+                    </div>
+                    <br>
+                    <label for="security_question">Security Question:</label><br>
+                    <select id="security_question" name="security_question" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="mother_maiden_name">What is your mother's maiden name?</option>
+                        <option value="city_born_in">In which city were you born?</option>
+                    </select><br>
+                    <textarea cols="30"></textarea>
+                    <br>
+
+                    <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+                    <label for="terms_conditions">I agree to terms and conditions</label><br><br>
+                    
+                    <input type="submit" value="Register">
+
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
